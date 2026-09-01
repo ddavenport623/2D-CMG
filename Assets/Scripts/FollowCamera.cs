@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    UnityEngine.Camera target;
+    public UnityEngine.Camera target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +17,6 @@ public class FollowCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = target.transform.position;
+        transform.position = new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z);
     }
 }
