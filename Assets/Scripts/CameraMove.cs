@@ -1,24 +1,43 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.UIElements;
 
 public class CameraMove : MonoBehaviour
 {
-    // public Rigidbody2D rb;
+    public Camera cam;
+    // Move
     public float moveSpeed = 5f;
-    public InputAction playerControls;
-    public float z;
-
     Vector2 moveDirection = Vector2.zero;
+
+    // Zoom
+    public float zoomSpeed;
+    public float minZoom;
+    public float maxZoom;
+
+    // General controls
+    PlayerControls controls;
+
+
+
+
+    public float scroll;
+
+    void Awake()
+    {
+        controls = new PlayerControls();
+    }
 
     private void OnEnable()
     {
-        playerControls.Enable();
+        controls.Enable();
+        controls.PlayerCamera.Enable();
     }
 
     private void OnDisable()
     {
-        playerControls.Disable();
+        controls.Disable();
+        controls.PlayerCamera.Disable();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,7 +49,17 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveDirection = playerControls.ReadValue<Vector2>();
+        // Up, down, left, right movement
+        moveDirection = controls.PlayerCamera.WASD.ReadValue<Vector2>();
         transform.position += new Vector3(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed, 0);
+
+        // zoom
+        scroll = controls.PlayerCamera.Zoom.ReadValue<float>();
+        if (scroll != 0)
+        {
+            cam.orthographicSize -= scroll * zoomSpeed * Time.deltaTime;
+            cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
+        }
+
     }
 }
