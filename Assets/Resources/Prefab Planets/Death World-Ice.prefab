@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 8255120555739717134}
   - component: {fileID: 2591919746173909942}
   m_Layer: 0
-  m_Name: Death World 2
+  m_Name: Death World-Ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
