@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Talassar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Iax
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Ardent Vale
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -774,6 +774,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 193182488}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 908126199}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2126626521}
     - target: {fileID: 2046975695329008265, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -1002,7 +1014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Occluda
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1322,7 +1334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Tanith
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1618,6 +1630,26 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 37896819}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 809769323}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1891277868}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 828912288}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2126626521}
     - target: {fileID: 783816121782495278, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
       propertyPath: m_Name
       value: Talassar
@@ -1784,6 +1816,14 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 504212978}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 809769323}
     - target: {fileID: 783816121782495278, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
       propertyPath: m_Name
       value: Tanith
@@ -1905,7 +1945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Volturnus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2251,6 +2291,17 @@ Skybox:
   m_GameObject: {fileID: 619394800}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 81f714daf7144784b8a2f42f1cd30927, type: 2}
+--- !u!114 &642766166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+  m_PrefabInstance: {fileID: 551938684}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &698834142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,7 +2482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Anceon Sextus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2607,6 +2658,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 1785241527}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1389242040}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1831664783}
     - target: {fileID: 4133077953505764540, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7
@@ -2728,7 +2791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Tatooine
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2943,6 +3006,51 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!1 &796789036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796789038}
+  - component: {fileID: 796789037}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &796789037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796789036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71569efa5559b74489726877e73bdcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  startingPlanet: {fileID: 1524056335}
+--- !u!4 &796789038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796789036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.60415, y: 3.83797, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797945281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,7 +3108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Zenith
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3140,6 +3248,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 310242235}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 642766166}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1680657330}
     - target: {fileID: 4133077953505764540, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.470497
@@ -3200,11 +3320,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4133077953505764540, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
   m_PrefabInstance: {fileID: 809769321}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &809769323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+  m_PrefabInstance: {fileID: 809769321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!4 &828912287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2759971613611240699, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
   m_PrefabInstance: {fileID: 3339469804362583595}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &828912288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2591919746173909942, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+  m_PrefabInstance: {fileID: 3339469804362583595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &830635719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3480,7 +3622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Vitria
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3609,6 +3751,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7067553088932502459, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
   m_PrefabInstance: {fileID: 182546877781493608}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &860778948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+  m_PrefabInstance: {fileID: 182546877781493608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+--- !u!114 &908126199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+  m_PrefabInstance: {fileID: 765480982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &983749218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,7 +3830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Thulium
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3981,6 +4145,22 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 107660125}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 860778948}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1909566147}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5105590591226048546}
     - target: {fileID: 1609878844895650251, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
       propertyPath: m_FlipY
       value: 1
@@ -4045,6 +4225,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1672920629838876356, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
   m_PrefabInstance: {fileID: 1285217518}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1285217520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+  m_PrefabInstance: {fileID: 1285217518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1315027120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,7 +4293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Davudis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4333,6 +4524,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 580516310}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1810206112}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 908126199}
     - target: {fileID: 783816121782495278, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
       propertyPath: m_Name
       value: Volturnus
@@ -4401,6 +4604,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7067553088932502459, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
   m_PrefabInstance: {fileID: 1389242038}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389242040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+  m_PrefabInstance: {fileID: 1389242038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1416816024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4530,6 +4744,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4817312805455298677, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
   m_PrefabInstance: {fileID: 4732080472783617896}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524056335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+  m_PrefabInstance: {fileID: 4732080472783617896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1547204218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,7 +4881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Agoro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4837,7 +5062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Kaltoth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4961,6 +5186,17 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1680657330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+  m_PrefabInstance: {fileID: 536683504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!114 &1691590105 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6098103794882283749, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
@@ -5029,7 +5265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Aegis Kastrun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5158,6 +5394,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1672920629838876356, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
   m_PrefabInstance: {fileID: 6690991735118095083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810206112 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+  m_PrefabInstance: {fileID: 6690991735118095083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
+--- !u!114 &1831664783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+  m_PrefabInstance: {fileID: 251149545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1834254019
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,6 +5523,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 983749220}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1680657330}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 828912288}
     - target: {fileID: 1609878844895650251, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -5333,6 +5603,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1672920629838876356, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
   m_PrefabInstance: {fileID: 1891277866}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1891277868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+  m_PrefabInstance: {fileID: 1891277866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1893590397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,6 +5705,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1909566147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+  m_PrefabInstance: {fileID: 2330890825414197224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1 &1922175986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,7 +6148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello
+  m_text: Mecanus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5996,6 +6288,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 1664659161}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1680657330}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1831664783}
     - target: {fileID: 1672920629838876356, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
       propertyPath: m_LocalPosition.x
       value: -77
@@ -6056,6 +6360,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1672920629838876356, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
   m_PrefabInstance: {fileID: 2126626519}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2126626521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+  m_PrefabInstance: {fileID: 2126626519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &182546877781493608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6072,6 +6387,26 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 797945283}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1524056335}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 527195373619696421}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6140414352739454011}
+    - target: {fileID: -8930909862748058872, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
+      propertyPath: 'Neighbors.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1285217520}
     - target: {fileID: 783816121782495278, guid: 3059a76ef47fb4e44aeefa4e4952f8bc, type: 3}
       propertyPath: m_Name
       value: Zenith
@@ -6205,6 +6540,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 859867306}
+    - target: {fileID: 3261965126019168961, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261965126019168961, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4098195688262074217}
+    - target: {fileID: 3261965126019168961, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 860778948}
     - target: {fileID: 9079037640057801244, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
       propertyPath: m_Name
       value: Vitria
@@ -6265,6 +6612,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9083926966231371352, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
   m_PrefabInstance: {fileID: 527195373619696419}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &527195373619696421 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3261965126019168961, guid: 3a342a162c909c142b576b569bcce9e8, type: 3}
+  m_PrefabInstance: {fileID: 527195373619696419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &2330890825414197224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6281,6 +6639,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 1315027122}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1285217520}
+    - target: {fileID: -6041448301982209819, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5804208758370189344}
     - target: {fileID: 4133077953505764540, guid: 93a2da3eb5775784a9891815c6a94535, type: 3}
       propertyPath: m_LocalPosition.x
       value: 66.772354
@@ -6356,6 +6726,22 @@ PrefabInstance:
       propertyPath: PlanetName
       value: Fenris
       objectReference: {fileID: 0}
+    - target: {fileID: 2591919746173909942, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2591919746173909942, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1524056335}
+    - target: {fileID: 2591919746173909942, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1680657330}
+    - target: {fileID: 2591919746173909942, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1891277868}
     - target: {fileID: 2759971613611240699, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.9571495
@@ -6398,6 +6784,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3796724260228738136, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
       propertyPath: m_Name
+      value: Fenris
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322623727691812226, guid: d6a29ef33ff890241ad3c71bb01ec013, type: 3}
+      propertyPath: m_text
       value: Fenris
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6468,6 +6858,14 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 746139457}
+    - target: {fileID: 4865131949171323467, guid: 4aa213a2f9539424c9d8366c881fafeb, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865131949171323467, guid: 4aa213a2f9539424c9d8366c881fafeb, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 527195373619696421}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6484,6 +6882,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 67266292892382187, guid: 4aa213a2f9539424c9d8366c881fafeb, type: 3}
   m_PrefabInstance: {fileID: 4098195688262074215}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4098195688262074217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4865131949171323467, guid: 4aa213a2f9539424c9d8366c881fafeb, type: 3}
+  m_PrefabInstance: {fileID: 4098195688262074215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &4732080472783617896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6500,6 +6909,26 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 1611404745}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: OriginPlanet
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 828912288}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1810206112}
+    - target: {fileID: -5442534677128584241, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 860778948}
     - target: {fileID: 4817312805455298677, guid: f694a9c16d9fe274b9ea95ecab373e29, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -6575,6 +7004,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 855625210}
     m_Modifications:
+    - target: {fileID: 588053308543503631, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
+      propertyPath: m_text
+      value: Doomhaven
+      objectReference: {fileID: 0}
     - target: {fileID: 2021641099946933416, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -6627,6 +7060,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doomhaven
       objectReference: {fileID: 0}
+    - target: {fileID: 5015578065777550529, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015578065777550529, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1285217520}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6640,6 +7081,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3397046735426437685, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
   m_PrefabInstance: {fileID: 5105590591226048544}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5105590591226048546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5015578065777550529, guid: 00d107983c9e8b14ca13bb0153826a21, type: 3}
+  m_PrefabInstance: {fileID: 5105590591226048544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &5804208758370189341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6692,6 +7144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4945598816073243288, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+      propertyPath: m_text
+      value: Soloraro
+      objectReference: {fileID: 0}
     - target: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
       propertyPath: PlanetName
       value: Soloraro
@@ -6700,6 +7156,22 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 5804208758370189343}
+    - target: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1810206112}
+    - target: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1909566147}
+    - target: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6460844820677728476}
     - target: {fileID: 8778624136037891041, guid: 89dd968dde990154e857eabab846bfca, type: 3}
       propertyPath: m_Name
       value: Soloraro
@@ -6728,6 +7200,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
+--- !u!114 &5804208758370189344 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5747677255088535480, guid: 89dd968dde990154e857eabab846bfca, type: 3}
+  m_PrefabInstance: {fileID: 5804208758370189341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &6140414352739454009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6784,6 +7267,18 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 1691590105}
+    - target: {fileID: 6089978571410543636, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089978571410543636, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 860778948}
+    - target: {fileID: 6098103794882283749, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
+      propertyPath: m_text
+      value: Kamino
+      objectReference: {fileID: 0}
     - target: {fileID: 9010993249166374387, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
       propertyPath: m_Name
       value: Kamino
@@ -6809,6 +7304,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2429658186225167924, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
   m_PrefabInstance: {fileID: 6140414352739454009}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6140414352739454011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6089978571410543636, guid: db21c752992819642a8f8fe7a0a4c533, type: 3}
+  m_PrefabInstance: {fileID: 6140414352739454009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &6460844820677728474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6829,6 +7335,14 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 783410111}
+    - target: {fileID: 3608044790526796385, guid: 94ed1397b9936944db0c4082aaf3bd72, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608044790526796385, guid: 94ed1397b9936944db0c4082aaf3bd72, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5804208758370189344}
     - target: {fileID: 5221610530428854016, guid: 94ed1397b9936944db0c4082aaf3bd72, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.5
@@ -6886,6 +7400,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5221610530428854016, guid: 94ed1397b9936944db0c4082aaf3bd72, type: 3}
   m_PrefabInstance: {fileID: 6460844820677728474}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6460844820677728476 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3608044790526796385, guid: 94ed1397b9936944db0c4082aaf3bd72, type: 3}
+  m_PrefabInstance: {fileID: 6460844820677728474}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47adbef1ed8c3940a7b93ffbc014b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Planet
 --- !u!1001 &6690991735118095083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6902,6 +7427,22 @@ PrefabInstance:
       propertyPath: textElement
       value: 
       objectReference: {fileID: 2111810820}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: Neighbors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1524056335}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1389242040}
+    - target: {fileID: -871632584901930308, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
+      propertyPath: 'Neighbors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5804208758370189344}
     - target: {fileID: 1609878844895650251, guid: 3559a1146fc84b5419a3663247cbc7af, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -7034,3 +7575,4 @@ SceneRoots:
   - {fileID: 1128121278}
   - {fileID: 599450944}
   - {fileID: 1416816025}
+  - {fileID: 796789038}
