@@ -201,6 +201,94 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""TimeControls"",
+            ""id"": ""2be68e11-fb13-4daa-b2c2-4bb71280ec69"",
+            ""actions"": [
+                {
+                    ""name"": ""TogglePause"",
+                    ""type"": ""Button"",
+                    ""id"": ""2aff5d9d-76dc-4109-a796-7e1812626867"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Slow"",
+                    ""type"": ""Button"",
+                    ""id"": ""100621a3-4270-4697-a775-17ae4085c3dd"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Normal"",
+                    ""type"": ""Button"",
+                    ""id"": ""82ef7cbc-225e-4f15-be20-9723b55cede0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Fast"",
+                    ""type"": ""Button"",
+                    ""id"": ""d4f6b782-a5d9-4de6-b7eb-08c02dc1ee1e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4d0e5ea3-45a5-4efa-bac8-1477df38052b"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and Mouse"",
+                    ""action"": ""TogglePause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c05205dc-4702-4a67-b7b7-f8e5e0d154bf"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and Mouse"",
+                    ""action"": ""Slow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""55cc6e96-577c-4e5a-b765-45e33f5a9c11"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and Mouse"",
+                    ""action"": ""Normal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""37b6a949-326a-45a3-9c69-0e5e3f613532"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and Mouse"",
+                    ""action"": ""Fast"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -226,11 +314,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_PlayerCamera = asset.FindActionMap("PlayerCamera", throwIfNotFound: true);
         m_PlayerCamera_Zoom = m_PlayerCamera.FindAction("Zoom", throwIfNotFound: true);
         m_PlayerCamera_WASD = m_PlayerCamera.FindAction("WASD", throwIfNotFound: true);
+        // TimeControls
+        m_TimeControls = asset.FindActionMap("TimeControls", throwIfNotFound: true);
+        m_TimeControls_TogglePause = m_TimeControls.FindAction("TogglePause", throwIfNotFound: true);
+        m_TimeControls_Slow = m_TimeControls.FindAction("Slow", throwIfNotFound: true);
+        m_TimeControls_Normal = m_TimeControls.FindAction("Normal", throwIfNotFound: true);
+        m_TimeControls_Fast = m_TimeControls.FindAction("Fast", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
     {
         UnityEngine.Debug.Assert(!m_PlayerCamera.enabled, "This will cause a leak and performance issues, PlayerControls.PlayerCamera.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_TimeControls.enabled, "This will cause a leak and performance issues, PlayerControls.TimeControls.Disable() has not been called.");
     }
 
     /// <summary>
@@ -409,6 +504,135 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="PlayerCameraActions" /> instance referencing this action map.
     /// </summary>
     public PlayerCameraActions @PlayerCamera => new PlayerCameraActions(this);
+
+    // TimeControls
+    private readonly InputActionMap m_TimeControls;
+    private List<ITimeControlsActions> m_TimeControlsActionsCallbackInterfaces = new List<ITimeControlsActions>();
+    private readonly InputAction m_TimeControls_TogglePause;
+    private readonly InputAction m_TimeControls_Slow;
+    private readonly InputAction m_TimeControls_Normal;
+    private readonly InputAction m_TimeControls_Fast;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "TimeControls".
+    /// </summary>
+    public struct TimeControlsActions
+    {
+        private @PlayerControls m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public TimeControlsActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "TimeControls/TogglePause".
+        /// </summary>
+        public InputAction @TogglePause => m_Wrapper.m_TimeControls_TogglePause;
+        /// <summary>
+        /// Provides access to the underlying input action "TimeControls/Slow".
+        /// </summary>
+        public InputAction @Slow => m_Wrapper.m_TimeControls_Slow;
+        /// <summary>
+        /// Provides access to the underlying input action "TimeControls/Normal".
+        /// </summary>
+        public InputAction @Normal => m_Wrapper.m_TimeControls_Normal;
+        /// <summary>
+        /// Provides access to the underlying input action "TimeControls/Fast".
+        /// </summary>
+        public InputAction @Fast => m_Wrapper.m_TimeControls_Fast;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_TimeControls; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="TimeControlsActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(TimeControlsActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="TimeControlsActions" />
+        public void AddCallbacks(ITimeControlsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_TimeControlsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_TimeControlsActionsCallbackInterfaces.Add(instance);
+            @TogglePause.started += instance.OnTogglePause;
+            @TogglePause.performed += instance.OnTogglePause;
+            @TogglePause.canceled += instance.OnTogglePause;
+            @Slow.started += instance.OnSlow;
+            @Slow.performed += instance.OnSlow;
+            @Slow.canceled += instance.OnSlow;
+            @Normal.started += instance.OnNormal;
+            @Normal.performed += instance.OnNormal;
+            @Normal.canceled += instance.OnNormal;
+            @Fast.started += instance.OnFast;
+            @Fast.performed += instance.OnFast;
+            @Fast.canceled += instance.OnFast;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="TimeControlsActions" />
+        private void UnregisterCallbacks(ITimeControlsActions instance)
+        {
+            @TogglePause.started -= instance.OnTogglePause;
+            @TogglePause.performed -= instance.OnTogglePause;
+            @TogglePause.canceled -= instance.OnTogglePause;
+            @Slow.started -= instance.OnSlow;
+            @Slow.performed -= instance.OnSlow;
+            @Slow.canceled -= instance.OnSlow;
+            @Normal.started -= instance.OnNormal;
+            @Normal.performed -= instance.OnNormal;
+            @Normal.canceled -= instance.OnNormal;
+            @Fast.started -= instance.OnFast;
+            @Fast.performed -= instance.OnFast;
+            @Fast.canceled -= instance.OnFast;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="TimeControlsActions.UnregisterCallbacks(ITimeControlsActions)" />.
+        /// </summary>
+        /// <seealso cref="TimeControlsActions.UnregisterCallbacks(ITimeControlsActions)" />
+        public void RemoveCallbacks(ITimeControlsActions instance)
+        {
+            if (m_Wrapper.m_TimeControlsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="TimeControlsActions.AddCallbacks(ITimeControlsActions)" />
+        /// <seealso cref="TimeControlsActions.RemoveCallbacks(ITimeControlsActions)" />
+        /// <seealso cref="TimeControlsActions.UnregisterCallbacks(ITimeControlsActions)" />
+        public void SetCallbacks(ITimeControlsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_TimeControlsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_TimeControlsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="TimeControlsActions" /> instance referencing this action map.
+    /// </summary>
+    public TimeControlsActions @TimeControls => new TimeControlsActions(this);
     private int m_KeyboardandMouseSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -443,5 +667,41 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnWASD(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "TimeControls" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="TimeControlsActions.AddCallbacks(ITimeControlsActions)" />
+    /// <seealso cref="TimeControlsActions.RemoveCallbacks(ITimeControlsActions)" />
+    public interface ITimeControlsActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "TogglePause" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTogglePause(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Slow" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSlow(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Normal" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnNormal(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Fast" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFast(InputAction.CallbackContext context);
     }
 }

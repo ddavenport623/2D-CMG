@@ -18,9 +18,6 @@ public class CameraMove : MonoBehaviour
     // General controls
     PlayerControls controls;
 
-
-
-
     public float scroll;
 
     void Awake()

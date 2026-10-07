@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public struct ImperialDate
+public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
 {
     // Date info
     [SerializeField] private int day;
