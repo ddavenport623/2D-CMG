@@ -3,16 +3,17 @@ using UnityEngine;
 public class SpaceMarine : MonoBehaviour
 {
     // Private
-    string SMName;
-    int power;
+    [SerializeField] string SMName;
     SMNames nameList;
 
     // public
     public Planet location;
+    public float power {get;} = 0;
 
-    public SpaceMarine(Planet startingPlanet)
+    public SpaceMarine(Planet startingPlanet, float startingPower)
     {
         location = startingPlanet;
+        power = startingPower;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

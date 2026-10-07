@@ -6,11 +6,14 @@ public class SMSquad : MonoBehaviour
     SpaceMarine[] marines;
     int marineNum = 10;
 
-    // public
-    public int squadNum;
-    public Planet location;
+    // Public
+    public float power {get;} = 0 ;
 
-    public SMSquad(SMSquadSize size, Planet startingLocation)
+    // Accessible by inspector
+    [SerializeField] int squadNum;
+    [SerializeField] Planet location;
+
+    public SMSquad(SMSquadSize size, Planet startingLocation, float SMPower)
     {
         location = startingLocation;
         marines = new SpaceMarine[marineNum];
@@ -19,7 +22,8 @@ public class SMSquad : MonoBehaviour
             case SMSquadSize.full:
             for(int i=0; i<marineNum; i++)
                 {
-                    marines[i] = new(startingLocation);
+                    marines[i] = new(startingLocation, SMPower);
+                    power += marines[i].power;
                 }
                 break;
         }

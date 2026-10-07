@@ -9,8 +9,9 @@ public class SMCompany : MonoBehaviour
     // public
     public int CompanyNum; // Company Number
     public Planet location;
+    public float power {get;} = 0;
 
-    public SMCompany(SMCompanySize size, Planet startingPlanet)
+    public SMCompany(SMCompanySize size, Planet startingPlanet, float SMPower)
     {
         location = startingPlanet;
         squads = new SMSquad[squadNum];
@@ -19,7 +20,8 @@ public class SMCompany : MonoBehaviour
             case SMCompanySize.full:
                 for(int i=0; i<squadNum; i++)
                 {
-                    squads[i] = new(SMSquadSize.full, startingPlanet);
+                    squads[i] = new(SMSquadSize.full, startingPlanet, SMPower);
+                    power += squads[i].power;
                 }
                 break;
         }

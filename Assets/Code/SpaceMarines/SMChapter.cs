@@ -5,7 +5,8 @@ public class SMChapter : MonoBehaviour
     // private
     int CompanyNum = 10; // Total
     SMCompany [] companies;
-    int power;
+    readonly static float [] SMPower = {0.5f, 1, 1.5f, 2, 2, 4, 4, 4, 4, 7};
+    public float power {get;} = 0;
 
     // public
     public Planet location;
@@ -20,7 +21,8 @@ public class SMChapter : MonoBehaviour
             case SMChapterSize.full:
                 for(int i=0; i<CompanyNum; i++)
                 {
-                    companies[i] = new SMCompany(SMCompanySize.full, startingPlanet);
+                    companies[i] = new SMCompany(SMCompanySize.full, startingPlanet, SMPower[i]);
+                    power += companies[i].power;
                 }
                 break;
             default:
