@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpaceMarine : MonoBehaviour
+public class SpaceMarine
 {
     // Private
     [SerializeField] string SMName;

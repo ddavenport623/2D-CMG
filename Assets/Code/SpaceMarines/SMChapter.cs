@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SMChapter : MonoBehaviour
+public class SMChapter
 {
     // private
     int CompanyNum = 10; // Total

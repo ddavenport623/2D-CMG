@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SMSquad : MonoBehaviour
+public class SMSquad
 {
     // Private
     SpaceMarine[] marines;

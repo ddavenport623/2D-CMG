@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SMCompany : MonoBehaviour
+public class SMCompany
 {
     // private    
     SMSquad[] squads;

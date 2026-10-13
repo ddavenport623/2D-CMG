@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 public enum TimeSpeed
 {
@@ -120,7 +121,7 @@ public class TimeManager : MonoBehaviour
 
     private void AdvanceOneDay()
     {
-        CurrentDate = CurrentDate.AddDay(out bool monthChanged, out bool yearChanged);
+        CurrentDate = CurrentDate.AddDay(out bool monthChanged, out bool yearChanged, out bool MilleniumChanged);
 
         // Notify subscribers
         OnDayPassed?.Invoke(CurrentDate);
@@ -132,6 +133,9 @@ public class TimeManager : MonoBehaviour
         if (yearChanged)
         {
             OnYearPassed?.Invoke(CurrentDate);
+        }
+        if(MilleniumChanged){
+            OnMillenniumPassed?.Invoke(CurrentDate);
         }
     }
 }

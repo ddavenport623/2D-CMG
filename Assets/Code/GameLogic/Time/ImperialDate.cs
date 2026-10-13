@@ -32,15 +32,16 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
     }
 
     // TIME PROGRESSION
-    public ImperialDate AddDay(out bool monthChanged, out bool yearChanged)
+    public ImperialDate AddDay(out bool monthChanged, out bool yearChanged, out bool milleniumChanged)
     {
-        return AddDays(1, out monthChanged, out yearChanged);
+        return AddDays(1, out monthChanged, out yearChanged, out milleniumChanged);
     }
 
-    public ImperialDate AddDays(int daysToAdd, out bool monthChanged, out bool yearChanged)
+    public ImperialDate AddDays(int daysToAdd, out bool monthChanged, out bool yearChanged, out bool milleniumChanged)
     {
         monthChanged = false;
         yearChanged = false;
+        milleniumChanged = false;
 
         int newDay = day + daysToAdd;
         int newMonth = month;
@@ -62,6 +63,7 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
                 {
                     newYear = 0;
                     newMillennium++;
+                    milleniumChanged = true;
                 }
             }
         }
@@ -71,7 +73,7 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
     // Overload for when month and year change isn't needed to know
     public ImperialDate AddDays(int daysToAdd)
     {
-        return AddDays(daysToAdd, out _, out _);
+        return AddDays(daysToAdd, out _, out _, out _);
     }
 
     // FORMATTING
