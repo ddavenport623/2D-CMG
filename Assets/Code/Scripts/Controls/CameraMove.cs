@@ -17,8 +17,13 @@ public class CameraMove : MonoBehaviour
 
     // General controls
     PlayerControls controls;
-
     public float scroll;
+
+    // Boundaries
+    [SerializeField] float MaxDown;
+    [SerializeField] float MaxUp;
+    [SerializeField] float MaxRight;
+    [SerializeField] float MaxLeft;
 
     void Awake()
     {
@@ -48,7 +53,13 @@ public class CameraMove : MonoBehaviour
     {
         // Up, down, left, right movement
         moveDirection = controls.PlayerCamera.WASD.ReadValue<Vector2>();
-        transform.position += new Vector3(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed, 0);
+        Vector3 newPos = transform.position;
+        newPos += new Vector3(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed, 0);
+
+        // Boundary
+        newPos.x = Mathf.Clamp(newPos.x, MaxLeft, MaxRight);
+        newPos.y = Mathf.Clamp(newPos.y, MaxDown, MaxUp);
+        transform.position = newPos;
 
         // zoom
         scroll = controls.PlayerCamera.Zoom.ReadValue<float>();
