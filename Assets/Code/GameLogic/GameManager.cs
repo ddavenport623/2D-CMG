@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     // public
     public Planet startingPlanet;
+
+    // Queue<> events;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

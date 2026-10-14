@@ -31,6 +31,31 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
         this.day = Math.Clamp(day, 1, maxDays);
     }
 
+    public ImperialDate(int days)
+    {
+        if (days < 1) days = 1;
+        int remaining = days - 1;
+
+        millennium = 35 + (remaining / 365000);
+        remaining %= 365000;
+
+        year = remaining / 365;
+        remaining %= 365;
+
+        month = 12;
+        for (int i=0; i < 12; i++)
+        {
+            if (days < DaysInMonths[i])
+            {
+                month = i + 1;
+                break;
+            }
+            days -= DaysInMonths[i];
+        }
+
+        day = days + 1;
+    }
+
     // TIME PROGRESSION
     public ImperialDate AddDay(out bool monthChanged, out bool yearChanged, out bool milleniumChanged)
     {
@@ -109,6 +134,23 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
 
     public override int GetHashCode() => HashCode.Combine(day, month, year, millennium);
 
+    public int TotalDays()
+    {
+        int days = 0;
+
+        days += day;
+        for (int i=0; i < month -1; i++)
+        {
+            days += DaysInMonths[i];
+        }
+        
+        days += year * 365;
+
+        days += (millennium - 35) * 365000;
+
+        return days;
+    }
+
     // OPERATORS
     public static bool operator ==(ImperialDate a, ImperialDate b) => a.Equals(b);
     public static bool operator !=(ImperialDate a, ImperialDate b) => !a.Equals(b);
@@ -116,4 +158,8 @@ public struct ImperialDate : IComparable<ImperialDate>, IEquatable<ImperialDate>
     public static bool operator >(ImperialDate a, ImperialDate b) => a.CompareTo(b) > 0;
     public static bool operator <=(ImperialDate a, ImperialDate b) => a.CompareTo(b) <= 0;
     public static bool operator >=(ImperialDate a, ImperialDate b) => a.CompareTo(b) >= 0;
+    public static ImperialDate operator +(ImperialDate a, int b) => a.AddDays(b);
+    public static ImperialDate operator +(int a, ImperialDate b) => b.AddDays(a);
+    public static ImperialDate operator -(ImperialDate a, int b) => new(a.TotalDays() - b);
+    public static int operator -(ImperialDate a, ImperialDate b) => a.TotalDays() - b.TotalDays();
 }

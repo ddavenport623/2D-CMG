@@ -6,6 +6,8 @@ public class Planet : MonoBehaviour
 {
     public string PlanetName;
     public TextMeshPro textElement; // Assign in Inspector
+    public ActivePlanetEvent currentEvent;
+    public bool HasEvent => currentEvent != null;
 
     // Warp
     public bool OriginPlanet; // Planet where warp connections originates
