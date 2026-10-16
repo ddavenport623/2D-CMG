@@ -13,7 +13,7 @@ public class ActivePlanetEvent
         planetEvent = pEvent;
         location = p;
         startDate = cDate;
-        endDate = startDate.AddDays(pEvent.durationInDays);
+        endDate = startDate.AddDays(pEvent.durationToRespond);
     }
 
     public bool IsExpired(ImperialDate cDate)

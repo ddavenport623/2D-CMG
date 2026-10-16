@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
 
 public class EventManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class EventManager : MonoBehaviour
     [SerializeField] int MaxDaysBtwEvents = 70;
     [SerializeField] ImperialDate nextEvent;
     [SerializeField] List<ActivePlanetEvent> activeEvents = new();
+
+    public static event Action<ActivePlanetEvent> OnEventTriggered;
 
     void Start()
     {
@@ -38,7 +41,7 @@ public class EventManager : MonoBehaviour
 
     void ScheduleNextEvent(ImperialDate cDate)
     {
-        nextEvent = cDate + Random.Range(MinDaysBtwEvents, MaxDaysBtwEvents);
+        nextEvent = cDate + UnityEngine.Random.Range(MinDaysBtwEvents, MaxDaysBtwEvents);
     }
 
     void TriggerRandomEvent(ImperialDate cDate)
@@ -53,13 +56,19 @@ public class EventManager : MonoBehaviour
             }
         }
         if (availablePlanets.Count == 0) return;
-        Planet newPlanet = availablePlanets[Random.Range(0, availablePlanets.Count)];
+        Planet newPlanet = availablePlanets[UnityEngine.Random.Range(0, availablePlanets.Count)];
 
-        PlanetEventSO newEvent = eventPool[Random.Range(0, eventPool.Count)];
+        PlanetEventSO newEvent = eventPool[UnityEngine.Random.Range(0, eventPool.Count)];
 
+        TriggerSpecificEvent(newEvent, newPlanet, cDate);
+    }
+
+    void TriggerSpecificEvent(PlanetEventSO newEvent, Planet newPlanet, ImperialDate cDate)
+    {
         ActivePlanetEvent newAEvent = new(newEvent, newPlanet, cDate);
         activeEvents.Add(newAEvent);
         newPlanet.currentEvent = newAEvent;
+        OnEventTriggered?.Invoke(newAEvent);
     }
 
     void CheckExpirations(ImperialDate cDate)
