@@ -6,7 +6,7 @@ public class Planet : MonoBehaviour
 {
     public string PlanetName;
     public TextMeshPro textElement; // Assign in Inspector
-    public ActivePlanetEvent currentEvent;
+    [System.NonSerialized] public ActivePlanetEvent currentEvent = null;
     public bool HasEvent => currentEvent != null;
 
     // Warp
@@ -34,6 +34,16 @@ public class Planet : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnEnable()
+    {
+        PlanetManager.Instance?.RegisterPlanet(this);
+    }
+
+    void OnDisable()
+    {
+        PlanetManager.Instance?.UnregisterPlanet(this);
     }
 
     void GenerateWarpMap()

@@ -44,22 +44,57 @@ public class EventManager : MonoBehaviour
         nextEvent = cDate + UnityEngine.Random.Range(MinDaysBtwEvents, MaxDaysBtwEvents);
     }
 
+    // void TriggerRandomEvent(ImperialDate cDate)
+    // {
+    //     // Pick Planet
+    //     List<Planet> availablePlanets = new();
+    //     foreach (Planet p in PlanetManager.Instance.AllPlanets)
+    //     {
+    //         if (!p.HasEvent)
+    //         {
+    //             availablePlanets.Add(p);
+    //         }
+    //     }
+    //     if (availablePlanets.Count == 0) return;
+    //     Planet newPlanet = availablePlanets[UnityEngine.Random.Range(0, availablePlanets.Count)];
+
+    //     PlanetEventSO newEvent = eventPool[UnityEngine.Random.Range(0, eventPool.Count)];
+
+    //     TriggerSpecificEvent(newEvent, newPlanet, cDate);
+    // }
+
     void TriggerRandomEvent(ImperialDate cDate)
     {
+        Debug.Log($"[EventManager] Attempting to trigger event on {cDate}...");
+
         // Pick Planet
         List<Planet> availablePlanets = new();
+        Debug.Log($"[EventManager] Total planets in PlanetManager: {PlanetManager.Instance.AllPlanets.Count}");
         foreach (Planet p in PlanetManager.Instance.AllPlanets)
         {
             if (!p.HasEvent)
             {
                 availablePlanets.Add(p);
             }
+            else
+            {
+                Debug.Log($"Planet Not available: {p.PlanetName}");
+            }
         }
-        if (availablePlanets.Count == 0) return;
-        Planet newPlanet = availablePlanets[UnityEngine.Random.Range(0, availablePlanets.Count)];
 
+        Debug.Log($"[EventManager] Available planets found: {availablePlanets.Count}");
+        if (availablePlanets.Count == 0) return;
+
+        if (eventPool.Count == 0)
+        {
+            Debug.LogError("[EventManager] Event Pool is empty! Drag an event into the Inspector!");
+            return;
+        }
+
+        Planet newPlanet = availablePlanets[UnityEngine.Random.Range(0, availablePlanets.Count)];
         PlanetEventSO newEvent = eventPool[UnityEngine.Random.Range(0, eventPool.Count)];
 
+        Debug.Log($"[EventManager] Spawning '{newEvent.title}' on {newPlanet.PlanetName}!");
         TriggerSpecificEvent(newEvent, newPlanet, cDate);
     }
 
@@ -77,7 +112,7 @@ public class EventManager : MonoBehaviour
         {
             if (activeEvents[i].IsExpired(cDate))
             {
-                // TODO PENALTIES
+                TriggerSpecificEvent(activeEvents[i].planetEvent.onCriticalFailEvent, activeEvents[i].location, cDate);
                 activeEvents[i].location.currentEvent = null;
                 activeEvents.RemoveAt(i);
                 i--;

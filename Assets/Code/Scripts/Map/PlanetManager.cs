@@ -5,7 +5,7 @@ public class PlanetManager : MonoBehaviour
 {
     public static PlanetManager Instance {get; private set;}
 
-    List<Planet> planets = new();
+    [SerializeField] List<Planet> planets = new();
     public IReadOnlyList<Planet> AllPlanets => planets;
 
     void Awake()
@@ -43,7 +43,10 @@ public class PlanetManager : MonoBehaviour
 
     public void RegisterPlanet(Planet planet)
     {
-        planets.Add(planet);
+        if (!planets.Contains(planet))
+        {
+            planets.Add(planet);
+        }
     }
 
     public void UnregisterPlanet(Planet planet)

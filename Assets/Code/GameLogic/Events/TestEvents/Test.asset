@@ -14,6 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlanetEventSO
   eventId: test_1
   title: THIS IS A TEST
-  description: "Testing out my new event system\t"
-  spawnWeight: 50
-  durationInDays: 100
+  devDescription: Test
+  canSpawnNaturally: 1
+  alertMessage: Alert, this is a test
+  arriveMessage: Space marines sent
+  noArriveMessage: No Space marines sent
+  critSucceedMessage: Critical success
+  easySucceedMessage: Easy victory
+  HardSucceedMessage: Hard won fight
+  HardFailMessage: Close fail
+  easyFailMessage: Utter failure
+  critFailsMessage: Critical failure
+  critSuccess: 150
+  success: 15
+  fail: 10
+  critFail: 5
+  durationToRespond: 60
+  onFailEvent: {fileID: 0}
+  onCriticalFailEvent: {fileID: 0}
+  onSuccessEvent: {fileID: 0}
